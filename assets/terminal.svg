@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="354" viewBox="0 0 760 354">
+
+    <style>
+      .term-bg { fill: #0d1117; }
+      .titlebar { fill: #161b22; }
+      text { font-family: 'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace; font-size: 15px; }
+      .prompt { fill: #39d353; font-weight: 600; }
+      .out { fill: #c9d1d9; }
+      .glow { filter: drop-shadow(0 0 3px rgba(57,211,83,0.6)); }
+
+      .frame {
+        fill: none; stroke: #39d353; stroke-opacity: 0.35; stroke-width: 1.5;
+        animation: pulse 3.2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { stroke-opacity: 0.15; }
+        50% { stroke-opacity: 0.5; }
+      }
+
+      .scan { animation: drift 6s linear infinite; }
+      @keyframes drift {
+        from { transform: translateY(0); }
+        to   { transform: translateY(4px); }
+      }
+
+      .cursor { fill: #39d353; opacity: 0; }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    </style>
+    <style>@keyframes type0 { from { width: 0; } to { width: 89.2px; } }
+.type0 { animation: type0 0.29s steps(8, end) forwards; animation-delay: 0.30s; }
+@keyframes type1 { from { width: 0; } to { width: 665.6px; } }
+.type1 { animation: type1 2.54s steps(71, end) forwards; animation-delay: 0.77s; }
+@keyframes type2 { from { width: 0; } to { width: 16.0px; } }
+.type2 { animation: type2 0.12s steps(1, end) forwards; animation-delay: 3.48s; }
+@keyframes type3 { from { width: 0; } to { width: 391.2px; } }
+.type3 { animation: type3 1.46s steps(41, end) forwards; animation-delay: 3.66s; }
+@keyframes type4 { from { width: 0; } to { width: 308.8px; } }
+.type4 { animation: type4 1.14s steps(32, end) forwards; animation-delay: 5.31s; }
+@keyframes type5 { from { width: 0; } to { width: 354.6px; } }
+.type5 { animation: type5 1.32s steps(37, end) forwards; animation-delay: 6.63s; }
+@keyframes type6 { from { width: 0; } to { width: 16.0px; } }
+.type6 { animation: type6 0.12s steps(1, end) forwards; animation-delay: 8.13s; }
+@keyframes type7 { from { width: 0; } to { width: 180.7px; } }
+.type7 { animation: type7 0.64s steps(18, end) forwards; animation-delay: 8.31s; }
+@keyframes type8 { from { width: 0; } to { width: 263.1px; } }
+.type8 { animation: type8 0.96s steps(27, end) forwards; animation-delay: 9.13s; }
+@keyframes type9 { from { width: 0; } to { width: 253.9px; } }
+.type9 { animation: type9 0.93s steps(26, end) forwards; animation-delay: 10.28s; }
+.cursor { animation: cursor-in 0.15s ease forwards 11.39s, blink 0.9s steps(1) infinite 11.39s; }
+@keyframes cursor-in { to { opacity: 1; } }</style>
+  <rect class="term-bg" x="0" y="0" width="760" height="354" rx="10"/>
+  <g class="scan" clip-path="url(#winclip)"><rect x="0" y="0" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="4" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="8" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="12" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="16" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="20" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="24" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="28" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="32" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="36" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="40" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="44" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="48" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="52" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="56" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="60" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="64" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="68" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="72" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="76" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="80" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="84" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="88" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="92" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="96" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="100" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="104" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="108" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="112" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="116" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="120" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="124" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="128" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="132" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="136" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="140" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="144" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="148" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="152" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="156" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="160" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="164" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="168" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="172" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="176" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="180" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="184" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="188" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="192" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="196" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="200" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="204" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="208" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="212" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="216" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="220" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="224" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="228" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="232" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="236" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="240" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="244" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="248" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="252" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="256" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="260" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="264" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="268" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="272" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="276" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="280" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="284" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="288" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="292" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="296" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="300" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="304" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="308" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="312" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="316" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="320" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="324" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="328" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="332" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="336" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="340" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="344" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="348" width="760" height="1" fill="#39d353" opacity="0.025"/><rect x="0" y="352" width="760" height="1" fill="#39d353" opacity="0.025"/></g>
+  <clipPath id="winclip"><rect x="0" y="0" width="760" height="354" rx="10"/></clipPath>
+  <rect class="titlebar" x="0" y="0" width="760" height="34" rx="10"/>
+  <rect x="0" y="20" width="760" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="17" r="6" fill="#27c93f"/>
+  <text x="380.0" y="22" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">sarthakyerane — agent session</text>
+  <clipPath id="clip0"><rect class="type0" x="0" y="48" height="20" width="0"/></clipPath><text class="prompt glow" x="28" y="64" clip-path="url(#clip0)">$ whoami</text><clipPath id="clip1"><rect class="type1" x="0" y="74" height="20" width="0"/></clipPath><text class="out" x="28" y="90" clip-path="url(#clip1)">&gt; sarthakyerane — GenAI engineer, RAG / agentic pipelines / MCP servers</text><clipPath id="clip2"><rect class="type2" x="0" y="100" height="20" width="0"/></clipPath><text class="out" x="28" y="116" clip-path="url(#clip2)"></text><clipPath id="clip3"><rect class="type3" x="0" y="126" height="20" width="0"/></clipPath><text class="prompt glow" x="28" y="142" clip-path="url(#clip3)">$ curl api.github.com/users/sarthakyerane</text><clipPath id="clip4"><rect class="type4" x="0" y="152" height="20" width="0"/></clipPath><text class="out" x="28" y="168" clip-path="url(#clip4)">&gt; public_repos: 7   followers: 0</text><clipPath id="clip5"><rect class="type5" x="0" y="178" height="20" width="0"/></clipPath><text class="out" x="28" y="194" clip-path="url(#clip5)">&gt; most recently pushed: sarthakyerane</text><clipPath id="clip6"><rect class="type6" x="0" y="204" height="20" width="0"/></clipPath><text class="out" x="28" y="220" clip-path="url(#clip6)"></text><clipPath id="clip7"><rect class="type7" x="0" y="230" height="20" width="0"/></clipPath><text class="prompt glow" x="28" y="246" clip-path="url(#clip7)">$ status --current</text><clipPath id="clip8"><rect class="type8" x="0" y="256" height="20" width="0"/></clipPath><text class="out" x="28" y="272" clip-path="url(#clip8)">&gt; open to GenAI / SDE roles</text><clipPath id="clip9"><rect class="type9" x="0" y="282" height="20" width="0"/></clipPath><text class="out" x="28" y="298" clip-path="url(#clip9)">&gt; 430+ DSA problems solved</text><rect class="cursor" x="269.9" y="285" width="9" height="16"/>
+  <rect class="frame" x="1" y="1" width="758" height="352" rx="10"/>
+</svg>
