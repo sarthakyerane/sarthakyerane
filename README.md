@@ -3,57 +3,65 @@
 </div>
 
 <div align="center">
+<img src="assets/activity.svg" alt="live activity" width="620"/>
+</div>
 
-GenAI Engineer — building systems that read, remember, and reason over messy real-world data.
-RAG pipelines · agentic orchestration · MCP servers · production infra
-
+<div align="center">
+<img src="assets/lang_bars.svg" alt="top languages" width="520"/>
 </div>
 
 ---
 
-## 🧠 Flagship — [Meeting Intelligence Agent](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
+## flagship
 
-Agentic meeting analysis with cross-meeting memory. Talk to Claude Desktop directly — it transcribes, extracts, and remembers every meeting your team has ever had.
+<details open>
+<summary><b>🧠 Meeting Intelligence Agent</b> — talk to your meetings via Claude Desktop + MCP</summary>
 
-Claude Desktop (MCP Client)
-│
-▼
-MCP Server ── 5 tools: upload · search · action items · contradictions · history
-│
-▼
-FastAPI ── faster-whisper → LangGraph (4-way parallel extraction) → Groq/Gemini/Ollama
-│
-├── ChromaDB (semantic search + contradiction detection)
-├── Redis (semantic cache, 0.92 cosine threshold, ~60x speedup on repeat queries)
-└── MySQL (structured decisions / actions / history)
+Cross-meeting memory, semantic search, speaker-aware transcription. 4-way parallel LangGraph extraction (decisions / actions / conflicts / questions) cuts LLM latency ~60% vs sequential. Provider chain: Groq → Gemini → Ollama, never fully offline.
 
+`Python` `LangGraph` `FastAPI` `MCP` `Groq` `ChromaDB` `Redis` `MySQL` `faster-whisper`
 
-The extraction pipeline fans out 4 LangGraph nodes in parallel (decisions, action items, conflicts, open questions) instead of running them sequentially — cuts LLM latency by ~60%. LLM provider chain falls through Groq → Gemini → Ollama, so it never fully dies even offline.
+[→ repo](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
+</details>
 
-$ curl /decisions/search?q=database+choice
-→ cache miss (~2000ms)
-$ curl /decisions/search?q=which+database+did+we+pick
-→ cache hit (~40ms) # different wording, same vector neighborhood
+## other builds
 
+<details>
+<summary><b>📄 Document Delta & Grounded Chat</b> — revision diffing + grounded RAG</summary>
 
-`Python` `LangGraph` `FastAPI` `MCP` `Groq` `ChromaDB` `Redis` `MySQL` `faster-whisper` `pyannote`
+PDF / scanned PDF / DWG diffing with citation-grounded chat. LLM called only for the ambiguous 0.35–0.70 similarity band — numeric dimension changes are float-compared, not LLM-guessed. Three isolated ChromaDB collections per run to keep citation provenance clean.
 
----
+[→ repo](https://github.com/sarthakyerane/Document-delta-chat)
+</details>
 
-## 📡 other builds
+<details>
+<summary><b>🧩 CodeSage</b> — RAG over your own codebase</summary>
 
-**[Document Delta & Grounded Chat](https://github.com/sarthakyerane/Document-delta-chat)** — format-agnostic revision diffing (PDF / scanned PDF / DWG) + RAG chat grounded with citations. Doesn't call an LLM to compare `42.5mm` vs `45.0mm` when a float comparison answers it — LLM is invoked only for the ambiguous 0.35–0.70 similarity band. Three isolated ChromaDB collections per run to guarantee citation provenance never bleeds across source documents.
+tree-sitter AST parsing (10+ languages) + a hand-written C++ static analyzer for deterministic memory-leak / buffer-overflow detection. Hybrid static analysis + LLM, not LLM-only guessing.
 
-**[CodeSage](https://github.com/sarthakyerane/Codesage)** — RAG over your own codebase via tree-sitter AST parsing (10+ languages), paired with a hand-written C++ static analyzer for deterministic memory-leak / buffer-overflow detection — hybrid static analysis + LLM, not LLM-only guessing.
+[→ repo](https://github.com/sarthakyerane/Codesage)
+</details>
 
-**[Isometric MTO Generator](https://github.com/sarthakyerane/Isometric-Mto-Generator)** — piping isometric drawing → structured Material Take-Off via Gemini Vision. Runs at temperature 0.1, auto-derives gasket/bolt counts from flange pairs via a Pydantic validator, and gracefully degrades to a labeled mock response with zero API key so anyone can demo the full flow.
+<details>
+<summary><b>📐 Isometric MTO Generator</b> — piping drawing → Material Take-Off</summary>
 
-**[RIOM](https://github.com/sarthakyerane/Omnisight-engine)** — ambient screen understanding. Silently OCRs and embeds your screen activity so you can ask "what was I reading at 3pm?" in plain English. Privacy denylist blocks capture on password managers and banking sites by design.
+Gemini Vision pipeline at temperature 0.1. Auto-derives gasket/bolt counts from flange pairs via Pydantic validator. Degrades to a labeled mock response with zero API key.
+
+[→ repo](https://github.com/sarthakyerane/Isometric-Mto-Generator)
+</details>
+
+<details>
+<summary><b>👁 RIOM</b> — ambient screen understanding</summary>
+
+OCRs + embeds your screen activity so you can ask "what was I reading at 3pm?" in plain English. Privacy denylist blocks capture on password managers and banking sites by design.
+
+[→ repo](https://github.com/sarthakyerane/Omnisight-engine)
+</details>
 
 ---
 
 <div align="center">
 
-`Chess team captain, BMS Institute — 5th @ VTU, 7th @ state`
+430+ DSA problems solved · chess team captain, BMS Institute — 5th @ VTU, 7th @ state
 
 </div>
