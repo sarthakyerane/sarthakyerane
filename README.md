@@ -12,7 +12,7 @@
 
 ---
 
-## flagship
+## Flagship
 
 <details open>
 <summary><b>🧠 Meeting Intelligence Agent</b> — talk to your meetings via Claude Desktop + MCP</summary>
@@ -24,7 +24,7 @@ Cross-meeting memory, semantic search, speaker-aware transcription. 4-way parall
 [→ repo](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
 </details>
 
-## other builds
+## Other builds
 
 <details>
 <summary><b>📄 Document Delta & Grounded Chat</b> — revision diffing + grounded RAG</summary>
@@ -62,6 +62,6 @@ OCRs + embeds your screen activity so you can ask "what was I reading at 3pm?" i
 
 <div align="center">
 
-430+ DSA problems solved · chess team captain, BMS Institute — 5th @ VTU, 7th @ state
+450+ DSA problems solved · chess team captain, BMS Institute — 5th @ VTU, 7th @ state
 
 </div>
