@@ -108,3 +108,4 @@ Currently open to: **internships**
 <div align="center">
 <sub>this service has been building continuously — see commit history for the incident log</sub>
 </div>
+![Snake animation](https://raw.githubusercontent.com/sarthakyerane/sarthakyerane/output/github-contribution-grid-snake.svg)
