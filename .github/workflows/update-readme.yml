@@ -22,12 +22,10 @@ jobs:
       - run: python assets/generate_terminal_svg.py --username sarthakyerane --out assets/terminal.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: python assets/generate_activity_svg.py --username sarthakyerane --out assets/activity.svg
+      - run: python assets/generate_skyline_svg.py --username sarthakyerane --out assets/skyline.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: python assets/generate_lang_bars_svg.py --username sarthakyerane --out assets/lang_bars.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python assets/generate_reel_svg.py --out assets/reel.svg
 
       - name: Commit if changed
         run: |
