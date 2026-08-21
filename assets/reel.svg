@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="190" viewBox="0 0 720 190">
+    <style>
+      .bg { fill: #0d1117; }
+      .frame { fill:none; stroke:#39d353; stroke-opacity:0.3; stroke-width:1.5; animation: pulse 3.2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { stroke-opacity:.12; } 50% { stroke-opacity:.4; } }
+      @keyframes slot0 { 0.00% { opacity:0; transform: translateY(10px); } 1.80% { opacity:1; transform: translateY(0px); } 18.20% { opacity:1; transform: translateY(0px); } 20.00% { opacity:0; transform: translateY(-10px); } 100.00% { opacity:0; transform: translateY(-10px); } }
+.slot0 { animation: slot0 22.0s ease-in-out infinite; }@keyframes dot0 { 0.00% { opacity:0.25; } 1.80% { opacity:1; } 18.20% { opacity:1; } 20.00% { opacity:0.25; } 100.00% { opacity:0.25; } }.dot0 { animation: dot0 22.0s ease-in-out infinite; }@keyframes slot1 { 0.00% { opacity:0; transform: translateY(10px); } 20.00% { opacity:0; transform: translateY(10px); } 21.80% { opacity:1; transform: translateY(0px); } 38.20% { opacity:1; transform: translateY(0px); } 40.00% { opacity:0; transform: translateY(-10px); } 100.00% { opacity:0; transform: translateY(-10px); } }
+.slot1 { animation: slot1 22.0s ease-in-out infinite; }@keyframes dot1 { 0.00% { opacity:0.25; } 20.00% { opacity:0.25; } 21.80% { opacity:1; } 38.20% { opacity:1; } 40.00% { opacity:0.25; } 100.00% { opacity:0.25; } }.dot1 { animation: dot1 22.0s ease-in-out infinite; }@keyframes slot2 { 0.00% { opacity:0; transform: translateY(10px); } 40.00% { opacity:0; transform: translateY(10px); } 41.80% { opacity:1; transform: translateY(0px); } 58.20% { opacity:1; transform: translateY(0px); } 60.00% { opacity:0; transform: translateY(-10px); } 100.00% { opacity:0; transform: translateY(-10px); } }
+.slot2 { animation: slot2 22.0s ease-in-out infinite; }@keyframes dot2 { 0.00% { opacity:0.25; } 40.00% { opacity:0.25; } 41.80% { opacity:1; } 58.20% { opacity:1; } 60.00% { opacity:0.25; } 100.00% { opacity:0.25; } }.dot2 { animation: dot2 22.0s ease-in-out infinite; }@keyframes slot3 { 0.00% { opacity:0; transform: translateY(10px); } 60.00% { opacity:0; transform: translateY(10px); } 61.80% { opacity:1; transform: translateY(0px); } 78.20% { opacity:1; transform: translateY(0px); } 80.00% { opacity:0; transform: translateY(-10px); } 100.00% { opacity:0; transform: translateY(-10px); } }
+.slot3 { animation: slot3 22.0s ease-in-out infinite; }@keyframes dot3 { 0.00% { opacity:0.25; } 60.00% { opacity:0.25; } 61.80% { opacity:1; } 78.20% { opacity:1; } 80.00% { opacity:0.25; } 100.00% { opacity:0.25; } }.dot3 { animation: dot3 22.0s ease-in-out infinite; }@keyframes slot4 { 0.00% { opacity:0; transform: translateY(10px); } 80.00% { opacity:0; transform: translateY(10px); } 81.80% { opacity:1; transform: translateY(0px); } 98.20% { opacity:1; transform: translateY(0px); } 100.00% { opacity:0; transform: translateY(-10px); } }
+.slot4 { animation: slot4 22.0s ease-in-out infinite; }@keyframes dot4 { 0.00% { opacity:0.25; } 80.00% { opacity:0.25; } 81.80% { opacity:1; } 98.20% { opacity:1; } 100.00% { opacity:0.25; } }.dot4 { animation: dot4 22.0s ease-in-out infinite; }
+    </style>
+  <rect class="bg" x="0" y="0" width="720" height="190" rx="10"/>
+  
+        <g class="slot0" style="transform-box: fill-box;">
+          <text x="24" y="70" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" font-weight="700">Meeting Intelligence Agent</text>
+          <text x="24" y="98" fill="#c9d1d9" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">Agentic meeting memory via Claude Desktop + MCP</text>
+          <text x="24" y="122" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5">LangGraph · FastAPI · Groq · ChromaDB · MySQL</text>
+          <text x="24" y="146" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" opacity="0.85">↳ 60% faster via 4-way parallel extraction</text>
+        </g>
+        <g class="slot1" style="transform-box: fill-box;">
+          <text x="24" y="70" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" font-weight="700">Document Delta &amp; Grounded Chat</text>
+          <text x="24" y="98" fill="#c9d1d9" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">Format-agnostic revision diffing + cited RAG chat</text>
+          <text x="24" y="122" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5">Gemini Vision · ChromaDB · Redis</text>
+          <text x="24" y="146" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" opacity="0.85">↳ Numeric diffs never touch an LLM</text>
+        </g>
+        <g class="slot2" style="transform-box: fill-box;">
+          <text x="24" y="70" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" font-weight="700">CodeSage</text>
+          <text x="24" y="98" fill="#c9d1d9" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">RAG over your own codebase, hybrid with static analysis</text>
+          <text x="24" y="122" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5">tree-sitter · Ollama · C++ analyzer</text>
+          <text x="24" y="146" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" opacity="0.85">↳ 10+ languages, deterministic bug detection</text>
+        </g>
+        <g class="slot3" style="transform-box: fill-box;">
+          <text x="24" y="70" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" font-weight="700">Isometric MTO Generator</text>
+          <text x="24" y="98" fill="#c9d1d9" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">Piping drawing to structured Material Take-Off</text>
+          <text x="24" y="122" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5">Next.js · FastAPI · Gemini Vision</text>
+          <text x="24" y="146" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" opacity="0.85">↳ Runs at temp 0.1, near-zero hallucination</text>
+        </g>
+        <g class="slot4" style="transform-box: fill-box;">
+          <text x="24" y="70" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" font-weight="700">RIOM</text>
+          <text x="24" y="98" fill="#c9d1d9" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">Ambient screen understanding you can query in English</text>
+          <text x="24" y="122" fill="#6e7681" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5">Tesseract · ChromaDB · Redis</text>
+          <text x="24" y="146" fill="#39d353" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" opacity="0.85">↳ Privacy denylist built in, local-first</text>
+        </g>
+  <circle class="dot0" cx="24" cy="172" r="4" fill="#39d353"/><circle class="dot1" cx="46" cy="172" r="4" fill="#39d353"/><circle class="dot2" cx="68" cy="172" r="4" fill="#39d353"/><circle class="dot3" cx="90" cy="172" r="4" fill="#39d353"/><circle class="dot4" cx="112" cy="172" r="4" fill="#39d353"/>
+  <rect class="frame" x="1" y="1" width="718" height="188" rx="10"/>
+</svg>

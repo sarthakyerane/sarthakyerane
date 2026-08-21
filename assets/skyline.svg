@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" viewBox="0 0 720 340">
+
+    <style>
+      .bg { fill: #0d1117; }
+      text { font-family: 'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace; }
+      .title { fill: #6e7681; font-size: 12.5px; }
+      .label { fill: #c9d1d9; font-size: 12px; }
+      .scene {
+        transform-box: fill-box;
+        transform-origin: 50% 100%;
+        animation: sway 7s ease-in-out infinite;
+      }
+      @keyframes sway {
+        0%, 100% { transform: rotate(-2.2deg); }
+        50% { transform: rotate(2.2deg); }
+      }
+      .win { animation: twinkle 2.6s ease-in-out infinite; }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.9; }
+      }
+      .rise { animation: rise 0.9s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise {
+        from { transform: scaleY(0); }
+        to   { transform: scaleY(1); }
+      }
+    </style>
+    
+  <rect class="bg" x="0" y="0" width="720" height="340" rx="10"/>
+  <text class="title" x="16" y="26">$ du -h --languages ~/sarthakyerane</text>
+  <g class="scene">
+    <g class="rise" style="animation-delay:0.00s; transform-box: fill-box; transform-origin:50% 100%;"><rect x="60" y="90.0" width="52" height="180.0" fill="#3572A5"/><polygon points="60,90.0 112,90.0 128,74.0 76,74.0" fill="#4799de"/><polygon points="112,90.0 112,270.0 128,254.0 128,74.0" fill="#1d3e5a"/><rect class="win" x="70" y="256.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.00s"/><rect class="win" x="94" y="256.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.50s"/><rect class="win" x="70" y="236.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.40s"/><rect class="win" x="94" y="236.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.90s"/><rect class="win" x="70" y="216.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.80s"/><rect class="win" x="94" y="216.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:1.30s"/><rect class="win" x="70" y="196.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:1.20s"/><rect class="win" x="94" y="196.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:1.70s"/><rect class="win" x="70" y="176.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:1.60s"/><rect class="win" x="94" y="176.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.10s"/><rect class="win" x="70" y="156.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.00s"/><rect class="win" x="94" y="156.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.50s"/><rect class="win" x="70" y="136.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.40s"/><rect class="win" x="94" y="136.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.90s"/><rect class="win" x="70" y="116.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:2.80s"/><rect class="win" x="94" y="116.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:3.30s"/></g><g class="rise" style="animation-delay:0.12s; transform-box: fill-box; transform-origin:50% 100%;"><rect x="150" y="190.7" width="52" height="63.3" fill="#f34b7d"/><polygon points="150,190.7 202,190.7 218,174.7 166,174.7" fill="#ff65a8"/><polygon points="202,190.7 202,254.0 218,238.0 218,174.7" fill="#852944"/><rect class="win" x="160" y="240.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.30s"/><rect class="win" x="184" y="240.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.80s"/><rect class="win" x="160" y="220.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:0.70s"/><rect class="win" x="184" y="220.0" width="8" height="8" fill="#ffe9a8" style="animation-delay:1.20s"/></g>
+  </g>
+  <text class="label" x="86.0" y="306.0" text-anchor="middle">Python</text><text class="label" x="176.0" y="290.0" text-anchor="middle">C++</text>
+</svg>
