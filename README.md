@@ -1,46 +1,59 @@
-
-<br>
-
-<details>
-<summary><strong>Known Limitations</strong> — click to expand</summary>
-<br>
-
-- **Confidence drops on ambiguous input.** True for Gemini reading a hand-drawn isometric. Also true for me reading a spec with no acceptance criteria.
-- **Async is still a work in progress.** The MTO generator blocks for 10–20s synchronously — first thing I'd fix with more time.
-- **Mock mode exists for a reason.** If a required key is missing, my apps return a clearly-labeled mock instead of crashing.
-- **Some formats just don't have clean answers.** Document-delta-chat documents exactly where binary DWG parsing hits a wall instead of quietly returning an empty document.
-
-</details>
-
-<br>
-
-## GitHub Stats
+<div align="center">
+<img src="assets/terminal.svg" alt="agent session" width="760"/>
+</div>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sarthakyerane&show_icons=true&theme=github_dark&hide_border=true&bg_color=000000&title_color=2DD4BF&icon_color=2DD4BF&text_color=FFFFFF" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sarthakyerane&theme=github-dark-blue&hide_border=true&background=000000&ring=2DD4BF&fire=2DD4BF&currStreakLabel=2DD4BF" width="48%" />
-
-<br><br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarthakyerane&layout=compact&theme=github_dark&hide_border=true&bg_color=000000&title_color=2DD4BF&text_color=FFFFFF" width="48%" />
+GenAI Engineer — building systems that read, remember, and reason over messy real-world data.
+RAG pipelines · agentic orchestration · MCP servers · production infra
 
 </div>
 
-<br>
+---
 
-## Escalation Policy
+## 🧠 flagship — [Meeting Intelligence Agent](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
 
-*Who gets paged, in order.*
+Agentic meeting analysis with cross-meeting memory. Talk to Claude Desktop directly — it transcribes, extracts, and remembers every meeting your team has ever had.
 
-| Channel | Contact |
-|---|---|
-| GitHub | [@sarthakyerane](https://github.com/sarthakyerane) |
-| Email | [sarthakyerane123@gmail.com](mailto:sarthakyerane123@gmail.com) |
-| LinkedIn | [linkedin.com/in/sarthakyerane](https://www.linkedin.com/in/sarthakyerane/) |
+Claude Desktop (MCP Client)
+│
+▼
+MCP Server ── 5 tools: upload · search · action items · contradictions · history
+│
+▼
+FastAPI ── faster-whisper → LangGraph (4-way parallel extraction) → Groq/Gemini/Ollama
+│
+├── ChromaDB (semantic search + contradiction detection)
+├── Redis (semantic cache, 0.92 cosine threshold, ~60x speedup on repeat queries)
+└── MySQL (structured decisions / actions / history)
 
-<br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=100&section=footer" />
+The extraction pipeline fans out 4 LangGraph nodes in parallel (decisions, action items, conflicts, open questions) instead of running them sequentially — cuts LLM latency by ~60%. LLM provider chain falls through Groq → Gemini → Ollama, so it never fully dies even offline.
+
+$ curl /decisions/search?q=database+choice
+→ cache miss (~2000ms)
+$ curl /decisions/search?q=which+database+did+we+pick
+→ cache hit (~40ms) # different wording, same vector neighborhood
+
+
+`Python` `LangGraph` `FastAPI` `MCP` `Groq` `ChromaDB` `Redis` `MySQL` `faster-whisper` `pyannote`
+
+---
+
+## 📡 other builds
+
+**[Document Delta & Grounded Chat](https://github.com/sarthakyerane/Document-delta-chat)** — format-agnostic revision diffing (PDF / scanned PDF / DWG) + RAG chat grounded with citations. Doesn't call an LLM to compare `42.5mm` vs `45.0mm` when a float comparison answers it — LLM is invoked only for the ambiguous 0.35–0.70 similarity band. Three isolated ChromaDB collections per run to guarantee citation provenance never bleeds across source documents.
+
+**[CodeSage](https://github.com/sarthakyerane/Codesage)** — RAG over your own codebase via tree-sitter AST parsing (10+ languages), paired with a hand-written C++ static analyzer for deterministic memory-leak / buffer-overflow detection — hybrid static analysis + LLM, not LLM-only guessing.
+
+**[Isometric MTO Generator](https://github.com/sarthakyerane/Isometric-Mto-Generator)** — piping isometric drawing → structured Material Take-Off via Gemini Vision. Runs at temperature 0.1, auto-derives gasket/bolt counts from flange pairs via a Pydantic validator, and gracefully degrades to a labeled mock response with zero API key so anyone can demo the full flow.
+
+**[RIOM](https://github.com/sarthakyerane/Omnisight-engine)** — ambient screen understanding. Silently OCRs and embeds your screen activity so you can ask "what was I reading at 3pm?" in plain English. Privacy denylist blocks capture on password managers and banking sites by design.
+
+---
+
+<div align="center">
+
+`chess team captain, BMS Institute — 5th @ VTU, 7th @ state`
 
 </div>
