@@ -11,7 +11,7 @@ RAG pipelines · agentic orchestration · MCP servers · production infra
 
 ---
 
-## 🧠 flagship — [Meeting Intelligence Agent](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
+## 🧠 Flagship — [Meeting Intelligence Agent](https://github.com/sarthakyerane/Meeting-Intelligence-Agent)
 
 Agentic meeting analysis with cross-meeting memory. Talk to Claude Desktop directly — it transcribes, extracts, and remembers every meeting your team has ever had.
 
@@ -54,6 +54,6 @@ $ curl /decisions/search?q=which+database+did+we+pick
 
 <div align="center">
 
-`chess team captain, BMS Institute — 5th @ VTU, 7th @ state`
+`Chess team captain, BMS Institute — 5th @ VTU, 7th @ state`
 
 </div>
