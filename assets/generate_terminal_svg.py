@@ -50,15 +50,10 @@ def esc(s: str) -> str:
 def build_svg(username: str, stats: dict) -> str:
     lines = [
         ("$ whoami", GREEN, True),
-        (f"> {username} — GenAI engineer, RAG / agentic pipelines / MCP servers", WHITE, False),
+        (f"> {username} — GenAI engineer building agentic RAG systems", WHITE, False),
         ("", WHITE, False),
-        ("$ curl api.github.com/users/" + username, GREEN, True),
-        (f"> public_repos: {stats['public_repos']}   followers: {stats['followers']}", WHITE, False),
-        (f"> most recently pushed: {stats['latest_repo']}", WHITE, False),
-        ("", WHITE, False),
-        ("$ status --current", GREEN, True),
+        ("$ status", GREEN, True),
         ("> open to GenAI / SDE roles", WHITE, False),
-        ("> 430+ DSA problems solved", WHITE, False),
     ]
 
     width, line_h, top_pad = 760, 26, 64
