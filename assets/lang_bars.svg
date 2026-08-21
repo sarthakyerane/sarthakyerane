@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="138" viewBox="0 0 520 138">
+
+    <style>
+      .bg { fill: #0d1117; }
+      text { font-family: 'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace; }
+      .title { fill: #c9d1d9; font-size: 13px; }
+      .lang { fill: #c9d1d9; font-size: 13px; }
+      .count { fill: #6e7681; font-size: 12px; }
+      .frame {
+        fill: none; stroke: #39d353; stroke-opacity: 0.3; stroke-width: 1.5;
+        animation: pulse 3.2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { stroke-opacity: 0.12; }
+        50% { stroke-opacity: 0.4; }
+      }
+    </style>
+    
+  <rect class="bg" x="0" y="0" width="520" height="138" rx="10"/>
+  <text class="title" x="16" y="28">$ git log --stat --author=sarthakyerane | top languages</text>
+  
+        <style>
+          @keyframes grow0 { from { width: 0; } to { width: 300.0px; } }
+        </style>
+        <text class="lang" x="16" y="65">Python</text>
+        <rect x="130" y="53" width="300.0" height="14" rx="3" fill="#3572A5"
+              style="animation: grow0 0.8s cubic-bezier(.2,.8,.2,1) 0.00s both;"/>
+        <text class="count" x="442" y="65">6</text>
+        
+        <style>
+          @keyframes grow1 { from { width: 0; } to { width: 50.0px; } }
+        </style>
+        <text class="lang" x="16" y="99">C++</text>
+        <rect x="130" y="87" width="50.0" height="14" rx="3" fill="#f34b7d"
+              style="animation: grow1 0.8s cubic-bezier(.2,.8,.2,1) 0.15s both;"/>
+        <text class="count" x="442" y="99">1</text>
+        
+  <rect class="frame" x="1" y="1" width="518" height="136" rx="10"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="228" viewBox="0 0 620 228">
+
+    <style>
+      .bg { fill: #0d1117; }
+      text { font-family: 'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Consolas,monospace; font-size: 13.5px; }
+      .title { fill: #c9d1d9; }
+      .amber { fill: #ffa657; }
+      .dim { fill: #6e7681; }
+      .row { opacity: 0; animation: in 0.4s ease forwards; }
+      @keyframes in { to { opacity: 1; } }
+      .dot { animation: blink 1.4s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:.3; } 50% { opacity:1; } }
+      .frame {
+        fill: none; stroke: #ffa657; stroke-opacity: 0.3; stroke-width: 1.5;
+        animation: pulse 3.2s ease-in-out infinite;
+      }
+      @keyframes pulse { 0%,100% { stroke-opacity:.12; } 50% { stroke-opacity:.4; } }
+    </style>
+    
+  <rect class="bg" x="0" y="0" width="620" height="228" rx="10"/>
+  <text class="title dim" x="16" y="26">$ tail -f /var/log/sarthakyerane/activity.log</text>
+  <circle class="dot" cx="18" cy="44" r="3" fill="#ffa657" style="animation-delay:0.15s"/><text class="row amber" x="30" y="48" style="animation-delay:0.15s">push  sarthakyerane  (0 commits)</text><circle class="dot" cx="18" cy="70" r="3" fill="#ffa657" style="animation-delay:0.33s"/><text class="row amber" x="30" y="74" style="animation-delay:0.33s">push  Meeting-Intelligence-Agent  (0 commits)</text><circle class="dot" cx="18" cy="96" r="3" fill="#ffa657" style="animation-delay:0.51s"/><text class="row amber" x="30" y="100" style="animation-delay:0.51s">public  Document-delta-chat</text><circle class="dot" cx="18" cy="122" r="3" fill="#ffa657" style="animation-delay:0.69s"/><text class="row amber" x="30" y="126" style="animation-delay:0.69s">starred  Codesage</text><circle class="dot" cx="18" cy="148" r="3" fill="#ffa657" style="animation-delay:0.87s"/><text class="row amber" x="30" y="152" style="animation-delay:0.87s">starred  Isometric-Mto-Generator</text><circle class="dot" cx="18" cy="174" r="3" fill="#ffa657" style="animation-delay:1.05s"/><text class="row amber" x="30" y="178" style="animation-delay:1.05s">starred  Meeting-Intelligence-Agent</text>
+  <rect class="frame" x="1" y="1" width="618" height="226" rx="10"/>
+</svg>
