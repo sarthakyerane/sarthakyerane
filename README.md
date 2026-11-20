@@ -12,6 +12,6 @@
 
 <div align="center">
 
-500+ DSA problems solved · chess team captain, BMS Institute — 5th @ VTU, 7th @ state
+500+ DSA problems solved · Chess team captain, BMSIT
 
 </div>
